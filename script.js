@@ -184,12 +184,15 @@ document.addEventListener('DOMContentLoaded', () => {
         // 3. About Section Bio Text
         const aboutBioContainer = document.getElementById('about-bio-text');
         if (aboutBioContainer) {
-            // Setup default content if config doesn't have about section explicitly, otherwise generate paragraphs
-            aboutBioContainer.innerHTML = `
-                <p>Passionné par le développement logiciel et le design visuel, je conçois des solutions digitales qui allient esthétique, vitesse de chargement et robustesse.</p>
-                <p>Ce portfolio est géré de manière continue grâce à une intégration Git / GitHub. La modification de mes projets, de mes compétences et de mes informations est centralisée dans un unique fichier de configuration JSON.</p>
-                <p>N'hésitez pas à jeter un œil à mes projets récents ci-dessous ou à me contacter directement pour échanger sur vos besoins techniques.</p>
-            `;
+            if (personal.bio) {
+                const paragraphs = personal.bio.split('\n\n').map(p => `<p>${p}</p>`).join('');
+                aboutBioContainer.innerHTML = paragraphs;
+            } else {
+                aboutBioContainer.innerHTML = `
+                    <p>Passionné par le développement logiciel et le design visuel, je conçois des solutions digitales qui allient esthétique, vitesse de chargement et robustesse.</p>
+                    <p>Ce portfolio est géré de manière continue grâce à une intégration Git / GitHub. La modification de mes projets, de mes compétences et de mes informations est centralisée dans un unique fichier de configuration JavaScript.</p>
+                `;
+            }
         }
 
         // 4. Stats Generation
@@ -281,6 +284,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const email = personal.email;
             emailLink.textContent = email;
             emailLink.href = `mailto:${email}`;
+        }
+
+        // Phone Number
+        const phoneLink = document.getElementById('contact-phone');
+        if (phoneLink && personal.phone) {
+            phoneLink.textContent = personal.phone;
+            phoneLink.href = `tel:${personal.phone.replace(/\s+/g, '')}`;
         }
 
         const socialContainer = document.getElementById('social-links');

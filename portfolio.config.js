@@ -1,16 +1,18 @@
-// Fichier de configuration du portfolio
+// Fichier de configuration du portfolio - Tata Marc A. SANVI
 const PORTFOLIO_CONFIG = {
   "personal": {
-    "name": "Marc-Antoine SANVI",
-    "title": "Développeur Full Stack Senior",
-    "taglines": ["Architecte Web", "Spécialiste APIs", "Créateur d'Interfaces"],
+    "name": "Tata Marc A. SANVI",
+    "title": "Analyste de Données & Développeur Web",
+    "taglines": ["Analyste de Données", "Spécialiste Power BI", "Développeur Web", "Master IA & Big Data"],
+    "bio": "Analyste de données et spécialiste Power BI / Excel avec une expérience solide en reporting, visualisation de données et conception de tableaux de bord décisionnels. Titulaire d'une Licence Professionnelle en Informatique (Génie Logiciel) de l'IAI-Togo et actuellement en Master IA & Big Data, je combine développement logiciel et analyse de données.\n\nFondateur de KALA INFORMATIQUE, j'accompagne également les entreprises dans leur transition digitale, le développement d'applications sur mesure et la gestion de leur infrastructure.",
     "location": "Lomé, Togo",
     "email": "statamarc@gmail.com",
+    "phone": "+228 93 23 45 15",
     "available": true,
     "photo": null,
     "socials": {
       "github": "https://github.com/tatasanvi",
-      "linkedin": "https://linkedin.com/in/tatasanvi",
+      "linkedin": "https://linkedin.com/in/tata-marc-a-sanvi",
       "twitter": ""
     }
   },
@@ -21,83 +23,138 @@ const PORTFOLIO_CONFIG = {
   ],
   "skills": [
     {
-      "category": "Frontend Development",
-      "icon": "🖥️",
+      "category": "Analyse de Données & BI",
+      "icon": "📊",
       "items": [
-        { "name": "React / Next.js", "level": 90 },
-        { "name": "TypeScript", "level": 85 },
-        { "name": "Tailwind CSS", "level": 95 },
-        { "name": "Framer Motion", "level": 80 }
+        { "name": "Power BI", "level": 95 },
+        { "name": "Excel Avancé & TCD", "level": 95 },
+        { "name": "Power Query", "level": 90 },
+        { "name": "Dashboards KPI", "level": 95 }
       ]
     },
     {
-      "category": "Backend & Cloud",
-      "icon": "⚙️",
+      "category": "Développement & IA",
+      "icon": "🧠",
       "items": [
-        { "name": "Node.js (NestJS / Express)", "level": 88 },
-        { "name": "APIs REST / GraphQL", "level": 92 },
-        { "name": "PostgreSQL / MongoDB", "level": 85 },
-        { "name": "Docker & CI/CD", "level": 75 }
+        { "name": "Python (Machine Learning)", "level": 85 },
+        { "name": "Java / PHP / WordPress", "level": 80 },
+        { "name": "HTML5 / CSS3 / JavaScript", "level": 85 },
+        { "name": "Git & GitHub", "level": 90 }
       ]
     },
     {
-      "category": "Design & Outils",
-      "icon": "🎨",
+      "category": "Systèmes & Cloud",
+      "icon": "☁️",
       "items": [
-        { "name": "UI/UX Design & Figma", "level": 80 },
-        { "name": "Git & GitHub", "level": 90 },
-        { "name": "Méthodologies Agiles", "level": 85 }
+        { "name": "AWS EC2 & Linux Ubuntu", "level": 80 },
+        { "name": "Windows Server & Windows 10/11", "level": 85 },
+        { "name": "Réseaux & Maintenance IT", "level": 85 },
+        { "name": "GLPI & CRM", "level": 80 }
       ]
     }
   ],
   "projects": [
     {
-      "id": "project-1",
-      "title": "Plateforme E-Commerce Premium",
-      "description": "Une application de commerce électronique complète avec panier temps réel, paiement sécurisé Stripe, et tableau de bord administrateur.",
-      "stack": ["Next.js", "Tailwind CSS", "Node.js", "Stripe"],
+      "id": "project-kala",
+      "title": "KALA INFORMATIQUE",
+      "description": "Entreprise de services informatiques spécialisée dans le développement d'applications, la création de sites web (vitrines et e-commerce), l'installation réseau, la gestion/analyse de données et la sécurité informatique.",
+      "stack": ["Développement d'applications", "Analyse de données", "Sécurité", "Réseau d'entreprise"],
       "category": "web",
       "featured": true,
       "image": null,
-      "liveUrl": "https://premium-shop.example.com",
-      "githubUrl": "https://github.com/tatasanvi/premium-ecommerce"
+      "liveUrl": "",
+      "githubUrl": ""
+    },
+    {
+      "id": "project-1",
+      "title": "Dashboards Power BI & Reporting KPI",
+      "description": "Création de tableaux de bord interactifs pour le suivi des activités, performances et indicateurs décisionnels commerciaux et IT.",
+      "stack": ["Power BI", "Excel", "Power Query", "KPIs"],
+      "category": "web",
+      "featured": false,
+      "image": null,
+      "liveUrl": "",
+      "githubUrl": ""
     },
     {
       "id": "project-2",
-      "title": "API Gateway Haute Performance",
-      "description": "Passerelle API sécurisée développée en Node.js pour orchestrer des microservices avec limiteur de débit et routage dynamique.",
-      "stack": ["Node.js", "Redis", "Docker", "Express"],
+      "title": "Détection EPI avec YOLOv5",
+      "description": "Développement d'un système d'intelligence artificielle de surveillance en temps réel du port d'équipements de protection sur chantier (détection par image).",
+      "stack": ["Python", "YOLOv5", "Computer Vision", "PyTorch"],
+      "category": "ia",
+      "featured": false,
+      "image": null,
+      "liveUrl": "",
+      "githubUrl": ""
+    },
+    {
+      "id": "project-3",
+      "title": "VyloNest",
+      "description": "Développement de l'application mobile et du site web de la plateforme pour la communauté étudiante indépendante VyloNest.",
+      "stack": ["React Native", "Web Site", "Mobile App", "Node.js"],
+      "category": "web",
+      "featured": false,
+      "image": null,
+      "liveUrl": "https://vylonest.com",
+      "githubUrl": ""
+    },
+    {
+      "id": "project-4",
+      "title": "turfandardor.com",
+      "description": "Développement complet du site internet et de l'application mobile de la plateforme turfandardor.",
+      "stack": ["Web Dev", "Mobile App", "API Integration"],
+      "category": "web",
+      "featured": false,
+      "image": null,
+      "liveUrl": "https://turfandardor.com",
+      "githubUrl": ""
+    },
+    {
+      "id": "project-5",
+      "title": "Déploiement Serveurs AWS EC2",
+      "description": "Configuration et mise en production sécurisée de serveurs Ubuntu sur l'infrastructure cloud AWS EC2.",
+      "stack": ["AWS EC2", "Linux Ubuntu", "Cloud Systems"],
       "category": "backend",
       "featured": false,
       "image": null,
       "liveUrl": "",
-      "githubUrl": "https://github.com/tatasanvi/api-gateway"
-    },
-    {
-      "id": "project-3",
-      "title": "Dashboard de Télémétrie IA",
-      "description": "Interface d'analyse de données en temps réel connectée à des modèles de prédiction avec graphiques hautement interactifs.",
-      "stack": ["React", "TypeScript", "ChartJS", "Python"],
-      "category": "ia",
-      "featured": false,
-      "image": null,
-      "liveUrl": "https://ai-dashboard.example.com",
-      "githubUrl": "https://github.com/tatasanvi/ai-telemetry-dashboard"
+      "githubUrl": ""
     }
   ],
   "experience": [
     {
-      "company": "Tech Solutions Africa",
-      "role": "Développeur Full Stack Senior",
-      "period": "Jan 2024 – Présent",
-      "description": "Conception de l'architecture des applications d'entreprise et mentorat de l'équipe de développeurs juniors.",
+      "company": "CONSEIL RÉGIONAL DE LA KARA",
+      "role": "Développeur Web & Technicien Réseau",
+      "period": "Janvier 2026 - Présent",
+      "description": "Déploiement et configuration du réseau d'entreprise. Installation et maintenance des équipements réseau.",
       "current": true
     },
     {
-      "company": "Innov'Dev Hub",
-      "role": "Développeur Front-End Senior",
-      "period": "Juin 2022 – Déc 2023",
-      "description": "Développement d'interfaces web réactives à fort trafic et optimisation des temps de chargement de 40%.",
+      "company": "ADEQUATE OUTSOURCING SERVICES",
+      "role": "IT Support (N1/N2)",
+      "period": "Mars 2024 - Août 2025",
+      "description": "Conception de tableaux de bord Power BI et Excel pour le suivi des performances IT et commerciales. Support technique N1/N2 et gestion des incidents via GLPI. Configuration et tests de CRM (Hermes, ViciDial, EBP).",
+      "current": false
+    },
+    {
+      "company": "TDS AVENUE CODEFORGE",
+      "role": "Stagiaire Data Science (Remote, Inde)",
+      "period": "Septembre 2024 - Octobre 2024",
+      "description": "Développement de modèles de Machine Learning. Analyse statistique, visualisation de données et production de reportings automatisés.",
+      "current": false
+    },
+    {
+      "company": "SHADOW CABINET",
+      "role": "Consultant IT",
+      "period": "Septembre 2023 - Juillet 2024",
+      "description": "Assistance utilisateurs sur applications métiers et bureautiques. Maintenance corrective et optimisation des systèmes.",
+      "current": false
+    },
+    {
+      "company": "GERME TECH",
+      "role": "Développeur Web",
+      "period": "Mai 2023 - Août 2023",
+      "description": "Développement d'une application web de gestion de projets. Gestion de base de données et formation des utilisateurs.",
       "current": false
     }
   ]

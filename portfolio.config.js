@@ -110,6 +110,17 @@ const PORTFOLIO_CONFIG = {
       "githubUrl": ""
     },
     {
+      "id": "project-ein-studio",
+      "title": "EIN Studio — Architecture & Space",
+      "description": "Site vitrine d'architecture et d'espace, conçu pour présenter une identité visuelle immersive et des projets inspirants.",
+      "stack": ["Design Web", "Architecture", "Portfolio", "Responsive"],
+      "category": "web",
+      "featured": false,
+      "image": null,
+      "liveUrl": "https://tatasanvi.github.io/architecture-ein/#hero",
+      "githubUrl": ""
+    },
+    {
       "id": "project-5",
       "title": "Déploiement Serveurs AWS EC2",
       "description": "Configuration et mise en production sécurisée de serveurs Ubuntu sur l'infrastructure cloud AWS EC2.",

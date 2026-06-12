@@ -1,0 +1,103 @@
+{
+  "personal": {
+    "name": "Marc-Antoine SANVI",
+    "title": "Développeur Full Stack Senior",
+    "taglines": ["Architecte Web", "Spécialiste APIs", "Créateur d'Interfaces"],
+    "location": "Lomé, Togo",
+    "email": "statamarc@gmail.com",
+    "available": true,
+    "photo": null,
+    "socials": {
+      "github": "https://github.com/tatasanvi",
+      "linkedin": "https://linkedin.com/in/tatasanvi",
+      "twitter": ""
+    }
+  },
+  "stats": [
+    { "label": "Années d'expérience", "value": 3, "suffix": "+" },
+    { "label": "Projets livrés", "value": 20, "suffix": "+" },
+    { "label": "Clients satisfaits", "value": 15, "suffix": "+" }
+  ],
+  "skills": [
+    {
+      "category": "Frontend Development",
+      "icon": "🖥️",
+      "items": [
+        { "name": "React / Next.js", "level": 90 },
+        { "name": "TypeScript", "level": 85 },
+        { "name": "Tailwind CSS", "level": 95 },
+        { "name": "Framer Motion", "level": 80 }
+      ]
+    },
+    {
+      "category": "Backend & Cloud",
+      "icon": "⚙️",
+      "items": [
+        { "name": "Node.js (NestJS / Express)", "level": 88 },
+        { "name": "APIs REST / GraphQL", "level": 92 },
+        { "name": "PostgreSQL / MongoDB", "level": 85 },
+        { "name": "Docker & CI/CD", "level": 75 }
+      ]
+    },
+    {
+      "category": "Design & Outils",
+      "icon": "🎨",
+      "items": [
+        { "name": "UI/UX Design & Figma", "level": 80 },
+        { "name": "Git & GitHub", "level": 90 },
+        { "name": "Méthodologies Agiles", "level": 85 }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "Plateforme E-Commerce Premium",
+      "description": "Une application de commerce électronique complète avec panier temps réel, paiement sécurisé Stripe, et tableau de bord administrateur.",
+      "stack": ["Next.js", "Tailwind CSS", "Node.js", "Stripe"],
+      "category": "web",
+      "featured": true,
+      "image": null,
+      "liveUrl": "https://premium-shop.example.com",
+      "githubUrl": "https://github.com/tatasanvi/premium-ecommerce"
+    },
+    {
+      "id": "project-2",
+      "title": "API Gateway Haute Performance",
+      "description": "Passerelle API sécurisée développée en Node.js pour orchestrer des microservices avec limiteur de débit et routage dynamique.",
+      "stack": ["Node.js", "Redis", "Docker", "Express"],
+      "category": "backend",
+      "featured": false,
+      "image": null,
+      "liveUrl": "",
+      "githubUrl": "https://github.com/tatasanvi/api-gateway"
+    },
+    {
+      "id": "project-3",
+      "title": "Dashboard de Télémétrie IA",
+      "description": "Interface d'analyse de données en temps réel connectée à des modèles de prédiction avec graphiques hautement interactifs.",
+      "stack": ["React", "TypeScript", "ChartJS", "Python"],
+      "category": "ia",
+      "featured": false,
+      "image": null,
+      "liveUrl": "https://ai-dashboard.example.com",
+      "githubUrl": "https://github.com/tatasanvi/ai-telemetry-dashboard"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Tech Solutions Africa",
+      "role": "Développeur Full Stack Senior",
+      "period": "Jan 2024 – Présent",
+      "description": "Conception de l'architecture des applications d'entreprise et mentorat de l'équipe de développeurs juniors.",
+      "current": true
+    },
+    {
+      "company": "Innov'Dev Hub",
+      "role": "Développeur Front-End Senior",
+      "period": "Juin 2022 – Déc 2023",
+      "description": "Développement d'interfaces web réactives à fort trafic et optimisation des temps de chargement de 40%.",
+      "current": false
+    }
+  ]
+}

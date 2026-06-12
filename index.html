@@ -3,38 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio | Créations & Projets</title>
-    <meta name="description" content="Découvrez mon portfolio professionnel contenant mes projets de développement, mes compétences et mes réalisations.">
-    <!-- Google Fonts -->
+    <title>Marc-Antoine Sanvi | Développeur Full Stack Senior</title>
+    <meta name="description" content="Portfolio professionnel de Marc-Antoine Sanvi, Développeur Full Stack Senior. Découvrez mes projets, compétences et expériences en ingénierie logicielle.">
+    
+    <!-- Open Graph Meta Tags for SEO -->
+    <meta property="og:title" content="Marc-Antoine Sanvi | Développeur Full Stack Senior">
+    <meta property="og:description" content="Découvrez mes créations et compétences techniques sur mon portfolio connecté à GitHub.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts from Fontshare & Google Fonts -->
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@700,800&f[]=satoshi@400,500,600,700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Style CSS -->
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Background Canvas for Interactive Particles -->
+    <!-- Custom Interactive Cursor -->
+    <div id="custom-cursor"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Background Noise Overlay & Subtly Grid -->
+    <div class="noise-overlay"></div>
+    <div class="grid-background"></div>
+
+    <!-- Interactive Background Particle Canvas -->
     <canvas id="particle-canvas"></canvas>
 
-    <!-- Header / Navigation -->
+    <!-- Navigation Bar -->
     <header id="main-header">
         <div class="header-container">
-            <a href="#" class="logo">
-                <span class="logo-accent">&lt;</span>TS<span class="logo-accent">/&gt;</span>
+            <a href="#" class="logo" id="logo-link">
+                <span class="logo-name">Marc-Antoine</span>
+                <span class="logo-accent">.</span>
             </a>
+            
             <nav id="nav-menu">
                 <ul>
-                    <li><a href="#hero" class="nav-link active">Accueil</a></li>
-                    <li><a href="#about" class="nav-link">À Propos</a></li>
-                    <li><a href="#skills" class="nav-link">Compétences</a></li>
-                    <li><a href="#projects" class="nav-link">Projets</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <div class="nav-toggle" id="nav-toggle-btn">
-                <i class="fa-solid fa-bars"></i>
+
+            <div class="nav-toggle" id="nav-toggle-btn" aria-label="Toggle navigation menu">
+                <div class="hamburger-bar"></div>
+                <div class="hamburger-bar"></div>
             </div>
         </div>
     </header>
@@ -42,94 +63,47 @@
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero-section">
+            <!-- Signature Oversized Background Text -->
+            <div class="signature-bg-text" id="sig-bg-text">SANVI</div>
+            
             <div class="container hero-container">
                 <div class="hero-content">
-                    <span class="hero-subtitle">Bienvenue sur mon portfolio</span>
-                    <h1 class="hero-title">Bonjour, je suis <span class="gradient-text">tatasanvi</span></h1>
-                    <h2 class="hero-role">Développeur Full-Stack & Designer UI/UX</h2>
-                    <p class="hero-description">
-                        Je conçois et développe des expériences numériques modernes, interactives et performantes. Bienvenue dans mon espace de création.
+                    <div class="availability-badge" id="availability-badge">
+                        <span class="pulse-dot"></span>
+                        <span class="availability-text">Disponible pour de nouveaux projets</span>
+                    </div>
+                    
+                    <h1 class="hero-headline">
+                        Développeur Full Stack <br>
+                        & <span class="gradient-text dynamic-tagline" id="rotative-tagline">Architecte Web</span>
+                    </h1>
+                    
+                    <p class="hero-subtext" id="hero-subtext-details">
+                        Basé à Lomé, Togo. Spécialisé en React, Node.js et architecture cloud.
                     </p>
+                    
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary">Découvrir mes projets</a>
-                        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                        <a href="#projects" class="btn btn-primary interactive-element">Voir mes projets <i class="fa-solid fa-arrow-down icon-arrow-down"></i></a>
+                        <a href="#contact" class="btn btn-secondary interactive-element">Me contacter <i class="fa-solid fa-arrow-right icon-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="hero-visual">
-                    <div class="glow-orb-wrapper">
-                        <div class="glow-orb orb-1"></div>
-                        <div class="glow-orb orb-2"></div>
-                        <div class="avatar-card">
-                            <div class="code-header">
-                                <span class="dot red"></span>
-                                <span class="dot yellow"></span>
-                                <span class="dot green"></span>
-                                <span class="window-title">portfolio.json</span>
-                            </div>
-                            <pre class="code-body"><code>{
-  <span class="key">"name"</span>: <span class="string">"tatasanvi"</span>,
-  <span class="key">"role"</span>: <span class="string">"Fullstack Developer"</span>,
-  <span class="key">"skills"</span>: [
-    <span class="string">"Javascript"</span>,
-    <span class="string">"HTML5/CSS3"</span>,
-    <span class="string">"Node.js"</span>,
-    <span class="string">"Git/GitHub"</span>
-  ],
-  <span class="key">"passions"</span>: [
-    <span class="string">"Clean Code"</span>,
-    <span class="string">"Modern UI"</span>
-  ]
-}</code></pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="scroll-indicator">
-                <a href="#about"><i class="fa-solid fa-chevron-down"></i></a>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="about-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Qui suis-je ?</span>
-                    <h2 class="section-title">À Propos De Moi</h2>
-                    <div class="title-underline"></div>
-                </div>
                 <div class="about-grid">
-                    <div class="about-text-card glass-panel">
-                        <h3>Mon Parcours</h3>
-                        <p>
-                            Passionné par la technologie et la création visuelle, j'associe la rigueur du développement à l'élégance du design. Mon but est de concevoir des interfaces intuitives et esthétiques tout en écrivant un code propre, modulaire et performant.
-                        </p>
-                        <p>
-                            Ce dossier est directement synchronisé avec mon dépôt GitHub, ce qui me permet de déployer et de mettre à jour mon portfolio de manière continue au fur et à mesure de ma progression.
-                        </p>
-                        <div class="about-info-grid">
-                            <div class="info-item">
-                                <span class="info-label">Localisation:</span>
-                                <span class="info-val">France / Distanciel</span>
-                            </div>
-                            <div class="info-item">
-                                <span class="info-label">GitHub:</span>
-                                <span class="info-val"><a href="https://github.com/tatasanvi" target="_blank">github.com/tatasanvi</a></span>
-                            </div>
+                    <div class="about-text-content reveal-on-scroll">
+                        <span class="section-num-tag">01 / ABOUT</span>
+                        <h2 class="section-title">À Propos</h2>
+                        <div class="about-paragraphs" id="about-bio-text">
+                            <!-- Populated dynamically by JS -->
                         </div>
                     </div>
-                    <div class="about-stats-card glass-panel">
-                        <div class="stat-box">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Passionné</span>
-                        </div>
-                        <div class="stat-box">
-                            <span class="stat-number">Git</span>
-                            <span class="stat-label">Versionné</span>
-                        </div>
-                        <div class="stat-box">
-                            <span class="stat-number">Modern</span>
-                            <span class="stat-label">UI/UX Design</span>
-                        </div>
+                    
+                    <div class="about-stats-content reveal-on-scroll" id="stats-container">
+                        <!-- Populated dynamically by JS -->
                     </div>
                 </div>
             </div>
@@ -138,64 +112,13 @@
         <!-- Skills Section -->
         <section id="skills" class="skills-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Ce que je maîtrise</span>
-                    <h2 class="section-title">Mes Compétences</h2>
-                    <div class="title-underline"></div>
+                <div class="skills-header reveal-on-scroll">
+                    <span class="section-num-tag">02 / SKILLS</span>
+                    <h2 class="section-title">Compétences</h2>
                 </div>
-                <div class="skills-grid">
-                    <div class="skills-category glass-panel">
-                        <h3><i class="fa-solid fa-code icon-color"></i> Front-End</h3>
-                        <ul class="skills-list">
-                            <li>
-                                <div class="skill-name-wrap">
-                                    <span>HTML5 & CSS3</span>
-                                    <span>95%</span>
-                                </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
-                            </li>
-                            <li>
-                                <div class="skill-name-wrap">
-                                    <span>JavaScript (ES6+)</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
-                            </li>
-                            <li>
-                                <div class="skill-name-wrap">
-                                    <span>Responsive Design</span>
-                                    <span>90%</span>
-                                </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="skills-category glass-panel">
-                        <h3><i class="fa-solid fa-server icon-color"></i> Back-End & Outils</h3>
-                        <ul class="skills-list">
-                            <li>
-                                <div class="skill-name-wrap">
-                                    <span>Node.js</span>
-                                    <span>70%</span>
-                                </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
-                            </li>
-                            <li>
-                                <div class="skill-name-wrap">
-                                    <span>Git & GitHub</span>
-                                    <span>85%</span>
-                                </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
-                            </li>
-                            <li>
-                                <div class="skill-name-wrap">
-                                    <span>UI/UX Design & Figma</span>
-                                    <span>80%</span>
-                                </div>
-                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
-                            </li>
-                        </ul>
-                    </div>
+                
+                <div class="skills-grid" id="skills-categories-container">
+                    <!-- Populated dynamically by JS -->
                 </div>
             </div>
         </section>
@@ -203,50 +126,37 @@
         <!-- Projects Section -->
         <section id="projects" class="projects-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Mes réalisations</span>
+                <div class="projects-header reveal-on-scroll">
+                    <span class="section-num-tag">03 / PROJECTS</span>
                     <h2 class="section-title">Projets Récents</h2>
-                    <div class="title-underline"></div>
+                    
+                    <!-- Categories filter -->
+                    <div class="projects-filter" id="projects-filter-bar">
+                        <button class="filter-btn active interactive-element" data-filter="all">Tout</button>
+                        <button class="filter-btn interactive-element" data-filter="web">Web</button>
+                        <button class="filter-btn interactive-element" data-filter="backend">Backend</button>
+                        <button class="filter-btn interactive-element" data-filter="ia">IA</button>
+                    </div>
                 </div>
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card glass-panel">
-                        <div class="project-img-placeholder">
-                            <i class="fa-solid fa-laptop-code"></i>
-                            <div class="project-overlay">
-                                <a href="#" class="overlay-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <span class="project-tag">Web Design</span>
-                            <h3>Portfolio Moderne</h3>
-                            <p>Un portfolio élégant avec un arrière-plan interactif, du verre dépoli (glassmorphism) et des micro-animations fluides.</p>
-                            <div class="project-tech">
-                                <span>HTML</span>
-                                <span>CSS Grid</span>
-                                <span>JavaScript</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 2 -->
-                    <div class="project-card glass-panel">
-                        <div class="project-img-placeholder">
-                            <i class="fa-solid fa-cube"></i>
-                            <div class="project-overlay">
-                                <a href="#" class="overlay-link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <span class="project-tag">Développement</span>
-                            <h3>Dashboard Analytique</h3>
-                            <p>Interface interactive de visualisation de données avec des graphiques animés et une gestion du thème sombre/clair.</p>
-                            <div class="project-tech">
-                                <span>React</span>
-                                <span>CSS Modules</span>
-                                <span>ChartJS</span>
-                            </div>
-                        </div>
-                    </div>
+                
+                <!-- Projects Grid -->
+                <div class="projects-grid" id="projects-grid-container">
+                    <!-- Populated dynamically by JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience-section">
+            <div class="container">
+                <div class="experience-header reveal-on-scroll">
+                    <span class="section-num-tag">04 / EXPERIENCE</span>
+                    <h2 class="section-title">Parcours Pro</h2>
+                </div>
+                
+                <div class="timeline-wrapper" id="timeline-container">
+                    <div class="timeline-line"></div>
+                    <!-- Populated dynamically by JS -->
                 </div>
             </div>
         </section>
@@ -254,47 +164,54 @@
         <!-- Contact Section -->
         <section id="contact" class="contact-section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-tag">Me contacter</span>
-                    <h2 class="section-title">Discutons de vos projets</h2>
-                    <div class="title-underline"></div>
-                </div>
                 <div class="contact-grid">
-                    <div class="contact-info glass-panel">
-                        <h3>Coordonnées</h3>
-                        <p>N'hésitez pas à m'envoyer un message. Je vous répondrai dans les plus brefs délais.</p>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <i class="fa-solid fa-envelope icon-color"></i>
-                                <span>statamarc@gmail.com</span>
+                    <div class="contact-left reveal-on-scroll">
+                        <span class="section-num-tag">05 / CONTACT</span>
+                        <h2 class="section-title">Discutons de vos projets</h2>
+                        <p class="contact-description">
+                            Vous avez un projet en tête ou souhaitez simplement échanger ? Remplissez le formulaire ou envoyez-moi un email directement.
+                        </p>
+                        
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <span class="info-label-dim">EMAIL</span>
+                                <div class="info-value-wrap">
+                                    <a href="#" id="obfuscated-email" class="info-value-link interactive-element"></a>
+                                </div>
                             </div>
-                            <div class="contact-item">
-                                <i class="fa-solid fa-location-dot icon-color"></i>
-                                <span>France / Distanciel</span>
+                            <div class="contact-info-item">
+                                <span class="info-label-dim">LOCALISATION</span>
+                                <span class="info-value-text" id="contact-location"></span>
                             </div>
                         </div>
-                        <div class="social-links">
-                            <a href="https://github.com/tatasanvi" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+
+                        <div class="social-links-container" id="social-links">
+                            <!-- Populated dynamically by JS -->
                         </div>
                     </div>
-                    <div class="contact-form-wrapper glass-panel">
-                        <form id="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Message envoyé avec succès ! (Simulation)');">
-                            <div class="form-group">
-                                <label for="name">Nom</label>
-                                <input type="text" id="name" required placeholder="Votre nom">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">E-mail</label>
-                                <input type="email" id="email" required placeholder="votre.email@exemple.com">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Message</label>
-                                <textarea id="message" required rows="5" placeholder="Votre message..."></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-block">Envoyer le message</button>
-                        </form>
+                    
+                    <div class="contact-right reveal-on-scroll">
+                        <div class="form-glass-panel">
+                            <form id="portfolio-contact-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="form-name">Nom complet</label>
+                                        <input type="text" id="form-name" required placeholder="Ex. Jean Dupont" class="interactive-element">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form-email">Adresse e-mail</label>
+                                        <input type="email" id="form-email" required placeholder="Ex. jean@exemple.com" class="interactive-element">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-message">Votre message</label>
+                                    <textarea id="form-message" required rows="6" placeholder="Parlez-moi de votre projet..." class="interactive-element"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block interactive-element" id="form-submit-btn">
+                                    Envoyer le message <i class="fa-solid fa-paper-plane icon-plane"></i>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -302,12 +219,21 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer id="main-footer">
         <div class="container footer-container">
-            <p>&copy; 2026 tatasanvi. Tous droits réservés.</p>
-            <p>Propulsé par HTML, CSS et Git.</p>
+            <div class="footer-left">
+                <p class="footer-copy">&copy; <span id="footer-year">2026</span> <span id="footer-name">Marc-Antoine SANVI</span>. Tous droits réservés.</p>
+            </div>
+            <div class="footer-right">
+                <p class="footer-tech">Dark Premium Portfolio · Versionné avec Git</p>
+            </div>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="interactive-element" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <!-- Script JS -->
     <script src="script.js"></script>

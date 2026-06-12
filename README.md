@@ -14,7 +14,7 @@ Bienvenue dans votre portfolio haut de gamme, concu pour les developpeurs senior
 ## Comment editer le portfolio en 5 minutes ?
 
 Toutes les donnees de votre portfolio se trouvent dans le fichier suivant :
-- portfolio.config.json
+- portfolio.config.js
 
 Ouvrez ce fichier dans votre editeur (ex. VS Code) et modifiez les valeurs pour personnaliser votre portfolio :
 - **personal** : Votre nom, votre role, vos taglines (qui s'animent en boucle sur l'ecran d'accueil), votre adresse e-mail, votre statut de disponibilite et vos liens de reseaux sociaux.
@@ -27,10 +27,13 @@ Ouvrez ce fichier dans votre editeur (ex. VS Code) et modifiez les valeurs pour 
 
 ## Tester localement
 
-Comme le site charge les donnees dynamiquement depuis le fichier portfolio.config.json, les navigateurs bloquent par defaut ces requetes pour des raisons de securite (politique CORS) si vous ouvrez simplement le fichier index.html par un double-clic.
+Le site charge ses donnees depuis `portfolio.config.js`. Vous pouvez le tester de deux manieres :
 
-Pour le tester localement, vous devez lancer un mini-serveur web. Heureusement, vous disposez de Python sur votre machine :
+**Methode 1 : Ouverture directe (Recommandee)**
+Double-cliquez simplement sur le fichier `index.html` pour l'ouvrir directement dans votre navigateur. Aucune installation ni serveur n'est necessaire !
 
+**Methode 2 : Serveur local Python**
+Si vous preferez utiliser un serveur web local (utile si vous ajoutez plus tard des extensions complexes) :
 1. Ouvrez votre terminal ou PowerShell.
 2. Deplacez-vous dans le dossier :
    cd E:\portfolio

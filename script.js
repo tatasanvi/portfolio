@@ -123,25 +123,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { root: null, rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
 
-    // --- Fetch and Populate Portfolio Data ---
-    fetch('portfolio.config.json')
-        .then(response => response.json())
-        .then(data => {
-            portfolioConfig = data;
-            populatePortfolio(data);
-            
-            // Re-setup custom cursor interactions on newly generated DOM elements
-            if (!isMobile && customCursor) {
-                const clickables = document.querySelectorAll('.interactive-element, a, button, input, textarea, .filter-btn');
-                clickables.forEach(el => {
-                    el.addEventListener('mouseenter', () => customCursor.classList.add('hovered'));
-                    el.addEventListener('mouseleave', () => customCursor.classList.remove('hovered'));
-                });
-            }
-        })
-        .catch(error => {
-            console.error('Erreur de chargement de portfolio.config.json:', error);
-        });
+    // --- Load Portfolio Data (Direct from global PORTFOLIO_CONFIG) ---
+    if (typeof PORTFOLIO_CONFIG !== 'undefined') {
+        portfolioConfig = PORTFOLIO_CONFIG;
+        populatePortfolio(PORTFOLIO_CONFIG);
+        
+        // Re-setup custom cursor interactions on newly generated DOM elements
+        if (!isMobile && customCursor) {
+            const clickables = document.querySelectorAll('.interactive-element, a, button, input, textarea, .filter-btn');
+            clickables.forEach(el => {
+                el.addEventListener('mouseenter', () => customCursor.classList.add('hovered'));
+                el.addEventListener('mouseleave', () => customCursor.classList.remove('hovered'));
+            });
+        }
+    } else {
+        console.error('PORTFOLIO_CONFIG non trouve ! Assurez-vous que portfolio.config.js est bien charge.');
+    }
+
 
     function populatePortfolio(config) {
         // 1. Personal Info

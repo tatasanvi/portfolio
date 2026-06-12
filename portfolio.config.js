@@ -1,4 +1,5 @@
-{
+// Fichier de configuration du portfolio
+const PORTFOLIO_CONFIG = {
   "personal": {
     "name": "Marc-Antoine SANVI",
     "title": "Développeur Full Stack Senior",
@@ -100,4 +101,4 @@
       "current": false
     }
   ]
-}
+};

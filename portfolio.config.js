@@ -2,9 +2,9 @@
 const PORTFOLIO_CONFIG = {
   "personal": {
     "name": "Tata Marc A. SANVI",
-    "title": "Analyste de Données & Développeur Web",
-    "taglines": ["Analyste de Données", "Spécialiste Power BI", "Développeur Web", "Master IA & Big Data"],
-    "bio": "Analyste de données et spécialiste Power BI / Excel avec une expérience solide en reporting, visualisation de données et conception de tableaux de bord décisionnels. Titulaire d'une Licence Professionnelle en Informatique (Génie Logiciel) de l'IAI-Togo et actuellement en Master IA & Big Data, je combine développement logiciel et analyse de données.\n\nFondateur de KALA INFORMATIQUE, j'accompagne également les entreprises dans leur transition digitale, le développement d'applications sur mesure et la gestion de leur infrastructure.",
+    "title": "Analyste de Données & Développeur Full Stack",
+    "taglines": ["Analyste de Données", "Spécialiste Power BI", "Développeur Full Stack", "Master IA & Big Data"],
+    "bio": "Diplômé en Génie Logiciel (IAI-Togo) et actuellement en Master IA & Big Data, je combine le développement d'applications web/mobiles performantes, l'analyse de données stratégiques (Power BI, Excel Avancé, Python) et l'administration d'infrastructures IT & Cloud (AWS EC2, Linux, GLPI).\n\nFondateur de KALA INFORMATIQUE, j'accompagne les entreprises dans leur transformation digitale, la création de tableaux de bord décisionnels, le développement logiciel sur-mesure et l'optimisation de leurs systèmes d'information.",
     "location": "Lomé, Togo",
     "email": "statamarc@gmail.com",
     "phone": "+228 93 23 45 15",
@@ -12,44 +12,48 @@ const PORTFOLIO_CONFIG = {
     "photo": null,
     "socials": {
       "github": "https://github.com/tatasanvi",
-      "linkedin": "https://linkedin.com/in/tata-marc-a-sanvi",
+      "linkedin": "https://www.linkedin.com/in/tata-sanvi",
       "twitter": ""
     }
   },
   "stats": [
     { "label": "Années d'expérience", "value": 3, "suffix": "+" },
     { "label": "Projets livrés", "value": 20, "suffix": "+" },
-    { "label": "Clients satisfaits", "value": 15, "suffix": "+" }
+    { "label": "Clients & Partenaires", "value": 15, "suffix": "+" }
   ],
   "skills": [
     {
       "category": "Analyse de Données & BI",
       "icon": "📊",
       "items": [
-        { "name": "Power BI", "level": 95 },
+        { "name": "Power BI & DAX", "level": 95 },
         { "name": "Excel Avancé & TCD", "level": 95 },
-        { "name": "Power Query", "level": 90 },
-        { "name": "Dashboards KPI", "level": 95 }
+        { "name": "Power Query & ETL", "level": 90 },
+        { "name": "Reporting & Dashboards KPI", "level": 95 },
+        { "name": "SQL (MySQL, PostgreSQL)", "level": 85 }
       ]
     },
     {
-      "category": "Développement & IA",
-      "icon": "🧠",
+      "category": "Développement Web & IA",
+      "icon": "💻",
       "items": [
-        { "name": "Python (Machine Learning)", "level": 85 },
-        { "name": "Java / PHP / WordPress", "level": 80 },
-        { "name": "HTML5 / CSS3 / JavaScript", "level": 85 },
-        { "name": "Git & GitHub", "level": 90 }
+        { "name": "JavaScript & TypeScript", "level": 85 },
+        { "name": "React.js & React Native", "level": 80 },
+        { "name": "Node.js & Express / REST APIs", "level": 85 },
+        { "name": "Python (Machine Learning, YOLOv5)", "level": 85 },
+        { "name": "PHP & WordPress", "level": 80 },
+        { "name": "Git, GitHub & CI/CD", "level": 90 }
       ]
     },
     {
-      "category": "Systèmes & Cloud",
+      "category": "IT Support, Cloud & Réseaux",
       "icon": "☁️",
       "items": [
+        { "name": "Support N1/N2 & GLPI (ITIL)", "level": 90 },
         { "name": "AWS EC2 & Linux Ubuntu", "level": 80 },
-        { "name": "Windows Server & Windows 10/11", "level": 85 },
-        { "name": "Réseaux & Maintenance IT", "level": 85 },
-        { "name": "GLPI & CRM", "level": 80 }
+        { "name": "Windows Server & Win 10/11", "level": 85 },
+        { "name": "Réseaux d'Entreprise (TCP/IP, VPN)", "level": 85 },
+        { "name": "Microsoft 365 & Mail OVH", "level": 85 }
       ]
     }
   ],
@@ -57,8 +61,8 @@ const PORTFOLIO_CONFIG = {
     {
       "id": "project-kala",
       "title": "KALA INFORMATIQUE",
-      "description": "Entreprise de services informatiques spécialisée dans le développement d'applications, la création de sites web (vitrines et e-commerce), l'installation réseau, la gestion/analyse de données et la sécurité informatique.",
-      "stack": ["Développement d'applications", "Analyse de données", "Sécurité", "Réseau d'entreprise"],
+      "description": "Entreprise de services informatiques créée pour accompagner la transformation numérique : développement logiciel, intégration web/mobile, création de tableaux de bord décisionnels, gestion réseau et sécurité.",
+      "stack": ["Génie Logiciel", "Analyse de données", "Sécurité", "Infrastructure"],
       "category": "web",
       "featured": true,
       "image": null,
@@ -66,32 +70,32 @@ const PORTFOLIO_CONFIG = {
       "githubUrl": ""
     },
     {
-      "id": "project-1",
-      "title": "Dashboards Power BI & Reporting KPI",
-      "description": "Création de tableaux de bord interactifs pour le suivi des activités, performances et indicateurs décisionnels commerciaux et IT.",
-      "stack": ["Power BI", "Excel", "Power Query", "KPIs"],
+      "id": "project-bi",
+      "title": "Tableaux de Bord Power BI & Reporting KPI",
+      "description": "Conception et déploiement de modèles de données et tableaux de bord interactifs Power BI pour piloter les performances IT (SLA, suivi GLPI) et commerciales.",
+      "stack": ["Power BI", "Power Query", "DAX", "Excel Avancé", "KPIs"],
       "category": "web",
-      "featured": false,
+      "featured": true,
       "image": null,
       "liveUrl": "",
       "githubUrl": ""
     },
     {
-      "id": "project-2",
-      "title": "Détection EPI avec YOLOv5",
-      "description": "Développement d'un système d'intelligence artificielle de surveillance en temps réel du port d'équipements de protection sur chantier (détection par image).",
-      "stack": ["Python", "YOLOv5", "Computer Vision", "PyTorch"],
+      "id": "project-yolo",
+      "title": "Système de Détection EPI (YOLOv5 & Computer Vision)",
+      "description": "Développement d'un système intelligent en temps réel par vision par ordinateur permettant la vérification automatique du port des Équipements de Protection Individuelle sur chantier.",
+      "stack": ["Python", "YOLOv5", "PyTorch", "OpenCV", "Deep Learning"],
       "category": "ia",
-      "featured": false,
+      "featured": true,
       "image": null,
       "liveUrl": "",
       "githubUrl": ""
     },
     {
-      "id": "project-3",
-      "title": "VyloNest",
-      "description": "Développement de l'application mobile et du site web de la plateforme pour la communauté étudiante indépendante VyloNest.",
-      "stack": ["React Native", "Web Site", "Mobile App", "Node.js"],
+      "id": "project-vylonest",
+      "title": "VyloNest Platform",
+      "description": "Développement de l'application mobile (React Native) et du site web de la communauté étudiante indépendante VyloNest.",
+      "stack": ["React Native", "Node.js", "Web Site", "Mobile App"],
       "category": "web",
       "featured": false,
       "image": null,
@@ -99,10 +103,10 @@ const PORTFOLIO_CONFIG = {
       "githubUrl": ""
     },
     {
-      "id": "project-4",
-      "title": "turfandardor.com",
-      "description": "Développement complet du site internet et de l'application mobile de la plateforme turfandardor.",
-      "stack": ["Web Dev", "Mobile App", "API Integration"],
+      "id": "project-turfandardor",
+      "title": "TurfAndArdor.com",
+      "description": "Conception et développement complet de la plateforme web et mobile TurfAndArdor avec intégration d'APIs et gestion d'utilisateurs.",
+      "stack": ["Web Dev", "Mobile App", "API REST", "UI/UX"],
       "category": "web",
       "featured": false,
       "image": null,
@@ -112,8 +116,8 @@ const PORTFOLIO_CONFIG = {
     {
       "id": "project-ein-studio",
       "title": "EIN Studio — Architecture & Space",
-      "description": "Site vitrine d'architecture et d'espace, conçu pour présenter une identité visuelle immersive et des projets inspirants.",
-      "stack": ["Design Web", "Architecture", "Portfolio", "Responsive"],
+      "description": "Site vitrine d'architecture d'intérieur avec une expérience visuelle haut de gamme, fluide et adaptative.",
+      "stack": ["HTML5/CSS3", "JavaScript", "Portfolio", "Responsive"],
       "category": "web",
       "featured": false,
       "image": null,
@@ -121,10 +125,10 @@ const PORTFOLIO_CONFIG = {
       "githubUrl": ""
     },
     {
-      "id": "project-5",
-      "title": "Déploiement Serveurs AWS EC2",
-      "description": "Configuration et mise en production sécurisée de serveurs Ubuntu sur l'infrastructure cloud AWS EC2.",
-      "stack": ["AWS EC2", "Linux Ubuntu", "Cloud Systems"],
+      "id": "project-aws",
+      "title": "Infrastructures Cloud AWS EC2 & Docker",
+      "description": "Déploiement, sécurisation et conteneurisation (Docker) de serveurs Linux Ubuntu sur AWS EC2 pour le hosting d'applications métiers.",
+      "stack": ["AWS EC2", "Linux Ubuntu", "Docker", "Nginx"],
       "category": "backend",
       "featured": false,
       "image": null,
@@ -135,37 +139,44 @@ const PORTFOLIO_CONFIG = {
   "experience": [
     {
       "company": "CONSEIL RÉGIONAL DE LA KARA",
-      "role": "Développeur Web & Technicien Réseau",
+      "role": "Technicien Réseau & Systèmes",
       "period": "Janvier 2026 - Présent",
-      "description": "Déploiement et configuration du réseau d'entreprise. Installation et maintenance des équipements réseau.",
+      "description": "Déploiement et sécurisation de l'infrastructure réseau d'entreprise (filaire & Wi-Fi). Diagnostics matériels/logiciels et assistance technique directe auprès des utilisateurs.",
       "current": true
     },
     {
-      "company": "ADEQUATE OUTSOURCING SERVICES",
-      "role": "IT Support (N1/N2)",
+      "company": "ADEQUATE OUTSOURCING SERVICES (AOS)",
+      "role": "IT Support Specialist (N1/N2) & Data Analyst",
       "period": "Mars 2024 - Août 2025",
-      "description": "Conception de tableaux de bord Power BI et Excel pour le suivi des performances IT et commerciales. Support technique N1/N2 et gestion des incidents via GLPI. Configuration et tests de CRM (Hermes, ViciDial, EBP).",
+      "description": "Support technique N1/N2 et résolution des incidents via GLPI. Conception de tableaux de bord Power BI / Excel pour le suivi des KPIs de service (SLA). Administration de messageries OVH/M365 et des outils CRM métiers (Hermes, ViciDial).",
       "current": false
     },
     {
       "company": "TDS AVENUE CODEFORGE",
-      "role": "Stagiaire Data Science (Remote, Inde)",
+      "role": "Stagiaire Data Science & IA (Remote, Inde)",
       "period": "Septembre 2024 - Octobre 2024",
-      "description": "Développement de modèles de Machine Learning. Analyse statistique, visualisation de données et production de reportings automatisés.",
+      "description": "Développement de modèles de Computer Vision (YOLOv5) et apprentissage par transfert pour la détection d'équipements de protection (EPI). Analyse statistique et reportings automatisés.",
+      "current": false
+    },
+    {
+      "company": "NUFIALA DIGITAL",
+      "role": "Chef de Projet Web & Développeur Full-Stack",
+      "period": "Août 2023 - Mai 2024",
+      "description": "Cadrage, conception et développement d'applications web (React, Node.js, PHP, WordPress). Animation d'ateliers clients, rédaction de cahiers des charges et gestion des phases de recette.",
       "current": false
     },
     {
       "company": "SHADOW CABINET",
-      "role": "Consultant IT",
+      "role": "Consultant IT & Maintenance Systèmes",
       "period": "Septembre 2023 - Juillet 2024",
-      "description": "Assistance utilisateurs sur applications métiers et bureautiques. Maintenance corrective et optimisation des systèmes.",
+      "description": "Assistance utilisateurs sur logiciels métiers, maintenance corrective des postes de travail et accompagnement dans l'optimisation des environnements de travail.",
       "current": false
     },
     {
       "company": "GERME TECH",
-      "role": "Développeur Web",
+      "role": "Développeur Web Full-Stack",
       "period": "Mai 2023 - Août 2023",
-      "description": "Développement d'une application web de gestion de projets. Gestion de base de données et formation des utilisateurs.",
+      "description": "Développement d'une application web de gestion de projets d'entreprise. Modélisation de bases de données SQL, développement frontend/backend et formation des équipes utilisateurs.",
       "current": false
     }
   ]

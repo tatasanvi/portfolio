@@ -70,6 +70,50 @@ const PORTFOLIO_CONFIG = {
       "githubUrl": ""
     },
     {
+      "id": "project-aos",
+      "title": "Adequate Outsourcing Services",
+      "description": "Conception et développement du site web institutionnel pour l'entreprise spécialisée dans les services BPO, la relation client et le support informatique.",
+      "stack": ["WordPress", "Web Design", "BPO", "SEO"],
+      "category": "web",
+      "featured": true,
+      "image": "adequate-outsourcing-logo.png",
+      "liveUrl": "https://adequate-outsourcing.com/",
+      "githubUrl": ""
+    },
+    {
+      "id": "project-amethyste",
+      "title": "Améthyste Conseils",
+      "description": "Développement et intégration responsive de la plateforme web institutionnelle pour le cabinet de conseil et d'accompagnement d'entreprises.",
+      "stack": ["WordPress", "UI/UX Design", "Conseil", "SEO"],
+      "category": "web",
+      "featured": true,
+      "image": "amethyste-conseil-logo.webp",
+      "liveUrl": "https://amethyste-conseils.com/",
+      "githubUrl": ""
+    },
+    {
+      "id": "project-monsterville",
+      "title": "MonsterVille Space",
+      "description": "Développement et mise en ligne de la plateforme web immersive MonsterVille Space.",
+      "stack": ["JavaScript", "HTML5/CSS3", "Web Design", "Responsive"],
+      "category": "web",
+      "featured": false,
+      "image": null,
+      "liveUrl": "https://monsterville.space/",
+      "githubUrl": ""
+    },
+    {
+      "id": "project-citafric",
+      "title": "CITAFRIC — Maintenance & Services IT",
+      "description": "Création du site web d'entreprise pour les prestations de maintenance informatique, d'intégration réseau et de solutions IT.",
+      "stack": ["Web Dev", "Services IT", "Maintenance", "Responsive"],
+      "category": "web",
+      "featured": false,
+      "image": null,
+      "liveUrl": "https://citafric.tg/maintenance-3/",
+      "githubUrl": ""
+    },
+    {
       "id": "project-bi",
       "title": "Tableaux de Bord Power BI & Reporting KPI",
       "description": "Conception et déploiement de modèles de données et tableaux de bord interactifs Power BI pour piloter les performances IT (SLA, suivi GLPI) et commerciales.",
